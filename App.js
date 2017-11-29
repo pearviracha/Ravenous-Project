@@ -65,3 +65,11 @@ class BusinessList extends React.Component {
  };
 
 module.exports=SearchBar;
+
+render() {
+  <div className="App">
+  <h1>ravenous</h1>
+  <SearchBar />
+  <BusinessList />
+</div>
+}
