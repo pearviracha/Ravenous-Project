@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import BusinessList from '../BusinessList/BusinessList';
-import SearchBar from './Searchbar/SearchBar';
+import BusinessList from '.components/BusinessList/BusinessList';
+import SearchBar from '.components/Searchbar/SearchBar';
 
 class App extends Component {
   render() {
@@ -20,8 +20,6 @@ class App extends Component {
   }
 }
 
-export default App;
-
 class BusinessList extends React.Component {
    render() { return
   <div className="BusinessList">
@@ -34,8 +32,6 @@ class BusinessList extends React.Component {
   </div>
    }
  }
-
- module.exports=BusinessList;
 
  class SearchBar extends React.Component {
    renderSortByOptions() {
@@ -64,12 +60,16 @@ class BusinessList extends React.Component {
    }
  };
 
-module.exports=SearchBar;
-
 render() {
   <div className="App">
   <h1>ravenous</h1>
   <SearchBar />
   <BusinessList />
 </div>
+}
+
+module.exports=BusinessList;
+module.exports=SearchBar;
+export default class App extends Component {
+
 }
