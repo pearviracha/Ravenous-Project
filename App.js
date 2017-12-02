@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import BusinessList from '.components/BusinessList/BusinessList';
 import SearchBar from '.components/SearchBar/SearchBar';
 
-const business = [
+const business = {
   imageSrc: 'https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg',
  name: 'MarginOtto Pizzeria',
  address: '1010 Paddington Way',
@@ -14,16 +14,8 @@ const business = [
  category: 'Italian',
  rating: 4.5,
  reviewCount: 90
-];
+};
 
-const businesses = [
-  business,
-  business,
-  business,
-  business,
-  business,
-  business,
-];
 /*
 Under the business object, create a businesses array.
 The array should hold six instances of the business object.
@@ -50,16 +42,16 @@ class BusinessList extends React.Component {
    render() {
      return (
   <div className="BusinessList">
-  <Business />
-       <Business />
-       <Business />
-       <Business />
-       <Business />
-       <Business />
+    {
+      this.props.businesses.map(business => {
+        return <Business
+          business={business}/>
+      })
+    }
      </div>
   );
 }
-}
+
 
 
  class SearchBar extends React.Component {
