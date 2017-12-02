@@ -1,3 +1,10 @@
+<img
+src="https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/background_search_mobile.jpg"
+>
+<img
+src="https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/background_search_desktop.jpg"
+>
+
 .SearchBar {
   display: flex;
   flex-direction: column;
