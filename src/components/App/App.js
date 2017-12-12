@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import BusinessList from '../components/BusinessList/BusinessList';
+import BusinessList from '../BusinessList/BusinessList';
 import SearchBar from '../SearchBar/SearchBar';
 
 import Yelp from '../../util/Yelp';
