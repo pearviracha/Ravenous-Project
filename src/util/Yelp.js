@@ -6,7 +6,7 @@ const Yelp = {
     if (accessToken) {
       return new Promise(resolve => resolve(accessToken));
     }
-    return fetch(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/oauth2/token?grant_type=client_credentials&client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}`, {
+    return fetch(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/oauth2/token?grant_type=client_credentials&client_id=${clientId}&client_secret=${secret}`, {
       method: 'POST'
     }).then(response => {
       return response.json();
