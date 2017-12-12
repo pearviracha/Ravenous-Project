@@ -1,7 +1,7 @@
 import {clientId, secret} from './config.js';
 let accessToken;
 
-const Yelp {
+const Yelp = {
   getAccessToken() {
     if (accessToken) {
       return new Promise(resolve => resolve(accessToken));
